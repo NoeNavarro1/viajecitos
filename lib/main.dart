@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:viajecitos/screens/description_place_screen.dart';
+import 'package:viajecitos/screens/gradient_back.dart';
+import 'package:viajecitos/screens/header.dart';
 import 'package:viajecitos/screens/reviews.dart';
 
 void main() {
@@ -18,12 +20,21 @@ class MainApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // body: DescriptionPlaceScreen(descriptionPlace: 
-        //descriptionText, 
-        //namePlace: namePlace, s
-        //tars: 4,
-        //),
-        body:  Reviews (),
+      body: Stack(
+      children: <Widget> [
+      ListView(
+        children: [
+          DescriptionPlaceScreen(
+            descriptionPlace: descriptionText, 
+            namePlace: namePlace,
+            stars: 4,
+          ),
+          const Reviews (),
+        ],
+      ),
+      const Header(),
+      ],
+      ),
       ),
     );
   }
