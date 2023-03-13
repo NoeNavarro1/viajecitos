@@ -20,7 +20,7 @@ class DescriptionPlaceScreen extends StatelessWidget {
 
     final star = Container(
       margin: const EdgeInsets.only(
-        top: 323.0,
+        top: 380.0,
         right: 3.0,
       ),
       child: const Icon(
@@ -33,7 +33,7 @@ class DescriptionPlaceScreen extends StatelessWidget {
       children: [
         Container(
           margin: const EdgeInsets.only(
-            top: 320.0,
+            top: 380.0,
             left: 20.0,
             right: 20.0,
           ),
