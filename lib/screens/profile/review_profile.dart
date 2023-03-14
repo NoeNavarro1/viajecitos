@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
-class Review extends StatelessWidget {
+// ignore: camel_case_types
+class Review_profile extends StatelessWidget {
   final String pathProfile;
   final String user;
   final String details;
   final String comments;
-  const Review({super.key, required this.pathProfile, required this.user, required this.details, required this.comments});
+  const Review_profile({super.key, required this.pathProfile, required this.user, required this.details, required this.comments});
 
   @override
   Widget build(BuildContext context) {

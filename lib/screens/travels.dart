@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:viajecitos/screens/home_screen.dart';
-import 'package:viajecitos/screens/proflie_screen.dart';
+import 'package:viajecitos/screens/profile/profile_screen.dart';
 import 'package:viajecitos/screens/search_place_screen.dart';
 
 
@@ -13,10 +13,11 @@ class Travels extends StatefulWidget {
 
 class _TravelsState extends State<Travels> {
    int indexTap = 0;
+   // ignore: non_constant_identifier_names
    final List<Widget>WidgetsBarChildren = const [
     HomeScreen(),
     SearchPlaceScreen(),
-    ProfileScreen(),
+    profile_screen(),
    ];
 
    void onTapTapped(int index){

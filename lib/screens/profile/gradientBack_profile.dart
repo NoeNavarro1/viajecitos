@@ -1,9 +1,11 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class GradientBack extends StatelessWidget{
+// ignore: camel_case_types
+class GradientBack_profile extends StatelessWidget{
   final String title;
-  const GradientBack({super.key, required this.title});
+  const GradientBack_profile({super.key, required this.title});
   
   @override
   Widget build(BuildContext context) {
@@ -12,8 +14,8 @@ class GradientBack extends StatelessWidget{
     decoration: const BoxDecoration(
       gradient: LinearGradient(
         colors:[
-          Color.fromARGB(255, 37, 97, 228),
-          Color.fromARGB(255, 36, 119, 136),
+          Color.fromARGB(255, 40, 55, 85),
+          Color.fromARGB(255, 136, 36, 133),
         ],
         begin: FractionalOffset(0.2,0.0),
         end: FractionalOffset(1.0,0.6),

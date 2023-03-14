@@ -1,13 +1,14 @@
 
 import 'package:flutter/material.dart';
 
-class SmallButton extends StatefulWidget {
-  const SmallButton({super.key});
+// ignore: camel_case_types
+class SmallButton_profile extends StatefulWidget {
+  const SmallButton_profile({super.key});
 
   @override
-  State<SmallButton> createState() => _SmallButtonState();
+  State<SmallButton_profile> createState() => _SmallButtonState();
   }
-  class _SmallButtonState extends State<SmallButton>{
+  class _SmallButtonState extends State<SmallButton_profile>{
     bool pressed = false;
     void onPressedFav(){
       setState(() {
@@ -19,14 +20,13 @@ class SmallButton extends StatefulWidget {
         
       });
     }
-    
       @override
       Widget build(BuildContext context) {
         return FloatingActionButton(
           onPressed:onPressedFav,
-          backgroundColor: Color.fromARGB(176, 0, 0, 0),
+          backgroundColor: Color.fromARGB(175, 218, 5, 5),
           mini: true,
-          tooltip: 'Like',
+          tooltip: 'Tus me Gusta',
           child: Icon(
             pressed ? Icons.favorite:Icons.favorite_border),
         );
